@@ -6,7 +6,8 @@ Version:	2.1.9
 Release:	1
 License:	GPL
 Group:		Themes/Gtk
-Source0:	ftp://ftp.berlios.de/pub/xfce-goodies/%{_xfce_ver}/%{name}-%{version}.tar.gz
+#Source0:	ftp://ftp.berlios.de/pub/xfce-goodies/%{_xfce_ver}/%{name}-%{version}.tar.gz
+Source0:	http://hannelore.f1.fhtw-berlin.de/mirrors/xfce4/xfce-%{_xfce_ver}/src/%{name}-%{version}.tar.gz
 # Source0-md5:	f2a057cb840777684102cf127b38f40b
 URL:		http://www.xfce.org/
 BuildRequires:	autoconf
