@@ -8,9 +8,9 @@ Group: 		Themes/Gtk
 Source0: 	http://dl.sourceforge.net/xfce/%{name}-%{version}.tar.gz
 # Source0-md5:	71fe40468c67f7d3828694be4a8710aa
 URL: 		http://www.xfce.org/
-BuildRequires: 	gtk+2-devel >= 2.0.0
-BuildRequires:	pkgconfig
-Requires:	gtk+2 >= 2.0.0
+BuildRequires: 	gtk+2-devel >= 2.2.0
+BuildRequires:	pkgconfig >= 0.9.0
+Requires:	gtk+2 >= 2.2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
