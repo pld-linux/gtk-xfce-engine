@@ -12,10 +12,10 @@ Source0:	http://hannelore.f1.fhtw-berlin.de/mirrors/xfce4/xfce-%{_xfce_ver}/src/
 URL:		http://www.xfce.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gtk+2-devel >= 2.2.0
+BuildRequires:	gtk+2-devel >= 2.4.0
 BuildRequires:	pkgconfig >= 0.9.0
 BuildRequires:	xft-devel
-Requires:	gtk+2 >= 2.2.0
+Requires:	gtk+2 >= 2.4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -40,7 +40,7 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
 # no *.la for gtk engines
-rm -f $RPM_BUILD_ROOT%{_libdir}/gtk-2.0/2.2.*/engines/*.la
+rm -f $RPM_BUILD_ROOT%{_libdir}/gtk-2.0/2.4.*/engines/*.la
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -48,5 +48,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS
-%attr(755,root,root) %{_libdir}/gtk-2.0/2.2.*/engines/*.so
+%attr(755,root,root) %{_libdir}/gtk-2.0/2.4.*/engines/*.so
 %{_datadir}/themes/Xfce*
