@@ -5,7 +5,7 @@ Release: 	0.1
 License:	GPL
 URL: 		http://www.xfce.org/
 Source0: 	http://belnet.dl.sourceforge.net/sourceforge/xfce/%{name}-%{version}.tar.gz
-# Source0-md5:	4bf4d4f54d34ff782690d73a9f158d12
+# Source0-md5:	71fe40468c67f7d3828694be4a8710aa
 Group: 		Themes/Gtk
 Requires:	gtk+2 >= 2.0.0
 BuildRequires: 	gtk+2-devel >= 2.0.0
