@@ -1,6 +1,6 @@
 %define		_xfce_ver 4.1.99.2
-Summary:	Port of XFce engine to GTK+-2.0
-Summary(pl):	Port silnika XFce do GTK+-2.0
+Summary:	Port of Xfce engine to GTK+-2.0
+Summary(pl):	Port silnika Xfce do GTK+-2.0
 Name:		gtk-xfce-engine
 Version:	2.2.3
 Release:	1
@@ -18,10 +18,10 @@ Requires:	gtk+2 >= 1:2.2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-A port of XFce engine to GTK+-2.0.
+A port of Xfce engine to GTK+-2.0.
 
 %description -l pl
-Port silnika XFce do GTK+-2.0.
+Port silnika Xfce do GTK+-2.0.
 
 %prep
 %setup -q
