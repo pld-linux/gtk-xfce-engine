@@ -1,4 +1,4 @@
-%define		_xfce_ver 4.1.91
+%define		_xfce_ver 4.1.99.1
 Summary:	Port of XFce engine to GTK+-2.0
 Summary(pl):	Port silnika XFce do GTK+-2.0
 Name:		gtk-xfce-engine
