@@ -1,15 +1,15 @@
 #
-%define		_snap 20040813
+%define		_xfce_ver 4.1.90
 
 Summary:	Port of XFce engine to GTK+-2.0
 Summary(pl):	Port silnika XFce do GTK+-2.0
 Name:		gtk-xfce-engine
 Version:	2.2.0
-Release:	0.%{_snap}.1
+Release:	0.1
 License:	GPL
 Group:		Themes/Gtk
-Source0:	http://ep09.pld-linux.org/~havner/xfce4/%{name}-%{_snap}.tar.bz2
-# Source0-md5:	c368e832a3408945669b324b9e6de6ec
+Source0:	ftp://ftp.berlios.de/pub/xfce-goodies/%{_xfce_ver}/%{name}-%{version}.tar.gz
+# Source0-md5:	c3e1ed2a78a98f838e64de797519384f
 URL:		http://www.xfce.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -27,7 +27,7 @@ A port of XFce engine to GTK+-2.0.
 Port silnika XFce do GTK+-2.0.
 
 %prep
-%setup -q -n %{name}-2
+%setup -q
 
 %build
 %{__libtoolize}
