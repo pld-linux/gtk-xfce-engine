@@ -38,6 +38,8 @@ Port silnika XFce do GTK+-2.0.
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
+mv $RPM_BUILD_ROOT%{_libdir}/gtk-2.0/2.4.0/engines/libxfce \
+	$RPM_BUILD_ROOT%{_libdir}/gtk-2.0/2.4.0/engines/libxfce.so
 
 # no *.la for gtk engines
 rm -f $RPM_BUILD_ROOT%{_libdir}/gtk-2.0/2.4.*/engines/*.la
