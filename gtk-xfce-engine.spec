@@ -1,8 +1,8 @@
-%define		xfce_version  4.0.0
+%define		xfce_version  4.0.1
 Summary:	Port of XFce engine to GTK+-2.0
 Summary(pl):	Port silnika XFce do GTK+-2.0
 Name:		gtk-xfce-engine
-Version:	2.1.6
+Version:	2.1.7
 Release:	1
 License:	GPL
 Group:		Themes/Gtk
