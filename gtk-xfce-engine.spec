@@ -1,12 +1,12 @@
-Summary:	Port of Xfce engine to GTK+-2.0
-Summary(pl):	Port silnika Xfce do GTK+-2.0
+Summary:	Port of XFce engine to GTK+-2.0
+Summary(pl):	Port silnika XFce do GTK+-2.0
 Name:		gtk-xfce-engine
-Version:	2.1.4
+Version:	2.1.5
 Release:	1
 License:	GPL
 Group:		Themes/Gtk
-Source0:	http://www.xfce.org/archive/xfce4-rc3/src/%{name}-%{version}.tar.gz
-# Source0-md5:	7b0ead5c9fb6cb7e1558f3b08bcf2471
+Source0:	http://www.xfce.org/archive/xfce4-rc4/src/%{name}-%{version}.tar.gz
+# Source0-md5:	446bfbd5fec1d6077fb03533640aeded
 URL:		http://www.xfce.org/
 BuildRequires:	gtk+2-devel >= 2.2.0
 BuildRequires:	pkgconfig >= 0.9.0
@@ -15,10 +15,10 @@ Requires:	gtk+2 >= 2.2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-A port of Xfce engine to GTK+-2.0.
+A port of XFce engine to GTK+-2.0.
 
 %description -l pl
-Port silnika Xfce do GTK+-2.0.
+Port silnika XFce do GTK+-2.0.
 
 %prep
 %setup -q
