@@ -11,11 +11,10 @@ Source0:	ftp://ftp.berlios.de/pub/xfce-goodies/%{_xfce_ver}/%{name}-%{version}.t
 URL:		http://www.xfce.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gtk+2-devel >= 2.2.0
+BuildRequires:	gtk+2-devel >= 1:2.2.0
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 0.9.0
-BuildRequires:	xft-devel
-Requires:	gtk+2 >= 2.2.0
+Requires:	gtk+2 >= 1:2.2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -38,7 +37,8 @@ Port silnika XFce do GTK+-2.0.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 # no *.la for gtk engines
 rm -f $RPM_BUILD_ROOT%{_libdir}/gtk-2.0/2.*/engines/*.la
