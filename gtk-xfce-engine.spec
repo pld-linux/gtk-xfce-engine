@@ -7,7 +7,7 @@ Release:	1
 License:	GPL
 Group:		Themes/Gtk
 Source0:	http://www.xfce.org/archive/xfce-%{xfce_version}/src/%{name}-%{version}.tar.gz
-# Source0-md5:	7b956f3a377c82a86589015d88e3668c
+# Source0-md5:	871d8dc4d1756e760cc40858b68f9e76
 URL:		http://www.xfce.org/
 BuildRequires:	gtk+2-devel >= 2.2.0
 BuildRequires:	pkgconfig >= 0.9.0
