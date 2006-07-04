@@ -1,13 +1,13 @@
-%define		_xfce_ver 4.2.1
+%define		_xfce_ver 4.2.3.1
 Summary:	Port of Xfce engine to GTK+-2.0
 Summary(pl):	Port silnika Xfce do GTK+-2.0
 Name:		gtk-xfce-engine
-Version:	2.2.6
+Version:	2.2.8
 Release:	1
 License:	GPL
 Group:		Themes/GTK+
 Source0:	http://www.us.xfce.org/archive/xfce-%{_xfce_ver}/src/%{name}-%{version}.tar.gz
-# Source0-md5:	9c713ba355d0c108599c4a8abe13db47
+# Source0-md5:	430251478bc15ca6f4b71bdaf16cce5e
 URL:		http://www.xfce.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
