@@ -1,5 +1,5 @@
 #
-%define		_xfce_ver 4.3.90.2
+%define		xfce_version 4.3.90.2
 #
 Summary:	Xfce theme engine for GTK+
 Summary(pl):	Motyw Xfce dla GTK+
@@ -8,7 +8,7 @@ Version:	2.3.90.2
 Release:	1
 License:	GPL
 Group:		Themes/GTK+
-Source0:	http://www.xfce.org/archive/xfce-%{_xfce_ver}/src/%{name}-%{version}.tar.bz2
+Source0:	http://www.xfce.org/archive/xfce-%{xfce_version}/src/%{name}-%{version}.tar.bz2
 # Source0-md5:	17e907c5b5bfba620602e06fd69802f9
 URL:		http://www.xfce.org/
 BuildRequires:	autoconf
