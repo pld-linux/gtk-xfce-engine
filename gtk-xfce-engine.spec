@@ -1,27 +1,29 @@
-%define		_xfce_ver 4.2.3.1
-Summary:	Port of Xfce engine to GTK+-2.0
-Summary(pl):	Port silnika Xfce do GTK+-2.0
+#
+%define		xfce_version 4.4.0
+#
+Summary:	Xfce theme engine for GTK+
+Summary(pl):	Motyw Xfce dla GTK+
 Name:		gtk-xfce-engine
-Version:	2.2.8
+Version:	2.4.0
 Release:	1
 License:	GPL
 Group:		Themes/GTK+
-Source0:	http://www.us.xfce.org/archive/xfce-%{_xfce_ver}/src/%{name}-%{version}.tar.gz
-# Source0-md5:	430251478bc15ca6f4b71bdaf16cce5e
+Source0:	http://www.xfce.org/archive/xfce-%{xfce_version}/src/%{name}-%{version}.tar.bz2
+# Source0-md5:	54676606e99cbec638f7f22ddea2872a
 URL:		http://www.xfce.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gtk+2-devel >= 1:2.2.0
+BuildRequires:	gtk+2-devel >= 2:2.8.20
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.9.0
-Requires:	gtk+2 >= 1:2.2.0
+Requires:	gtk+2 >= 2:2.8.20
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-A port of Xfce engine to GTK+-2.0.
+Xfce theme engine for GTK+.
 
 %description -l pl
-Port silnika Xfce do GTK+-2.0.
+Motyw Xfce dla GTK+.
 
 %prep
 %setup -q
@@ -48,6 +50,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS
+%doc AUTHORS ChangeLog NEWS README
 %attr(755,root,root) %{_libdir}/gtk-2.0/2.*/engines/*.so
 %{_datadir}/themes/Xfce*
