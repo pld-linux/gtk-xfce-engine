@@ -2,7 +2,7 @@
 %define		_xfce_ver 4.3.90.2
 #
 Summary:	Xfce theme engine for GTK+
-Summary(pl):	Motyw Xfce dla GTK+
+Summary(pl.UTF-8):   Motyw Xfce dla GTK+
 Name:		gtk-xfce-engine
 Version:	2.3.90.2
 Release:	1
@@ -22,7 +22,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Xfce theme engine for GTK+.
 
-%description -l pl
+%description -l pl.UTF-8
 Motyw Xfce dla GTK+.
 
 %prep
