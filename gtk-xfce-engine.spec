@@ -2,7 +2,7 @@
 %define		xfce_version 4.4.0
 #
 Summary:	Xfce theme engine for GTK+
-Summary(pl.UTF-8):   Motyw Xfce dla GTK+
+Summary(pl.UTF-8):	Motyw Xfce dla GTK+
 Name:		gtk-xfce-engine
 Version:	2.4.0
 Release:	1
