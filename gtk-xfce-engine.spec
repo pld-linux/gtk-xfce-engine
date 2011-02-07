@@ -1,22 +1,24 @@
 #
-%define		xfce_version 4.6.0
+%define		xfce_version 4.8.0
 #
 Summary:	Xfce theme engine for GTK+
 Summary(pl.UTF-8):	Motyw Xfce dla GTK+
 Name:		gtk-xfce-engine
-Version:	2.6.0
+Version:	2.8.0
 Release:	1
 License:	GPL
 Group:		Themes/GTK+
-Source0:	http://www.xfce.org/archive/xfce-%{xfce_version}/src/%{name}-%{version}.tar.bz2
-# Source0-md5:	e836705d2933d0a77c6628285e10d982
+Source0:	http://archive.xfce.org/src/xfce/gtk-xfce-engine/2.8/%{name}-%{version}.tar.bz2
+# Source0-md5:	195f4dc2e6632143ca9ca6bd17ca4680
 URL:		http://www.xfce.org/
 BuildRequires:	autoconf >= 2.52
 BuildRequires:	automake >= 1:1.8
-BuildRequires:	gtk+2-devel >= 2:2.10.6
+BuildRequires:	glib2-devel >= 1:2.18.0
+BuildRequires:	gtk+2-devel >= 2:2.14.0
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.9.0
-Requires:	gtk+2 >= 2:2.10.6
+BuildRequires:	xfce4-dev-tools >= 4.8.0
+Requires:	gtk+2 >= 2:2.14.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -33,7 +35,9 @@ Motyw Xfce dla GTK+.
 %{__aclocal}
 %{__autoconf}
 %{__automake}
-%configure
+%configure \
+	--disable-silent-rules
+
 %{__make}
 
 %install
@@ -43,7 +47,7 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT
 
 # no *.la for gtk engines
-rm -f $RPM_BUILD_ROOT%{_libdir}/gtk-2.0/2.*/engines/*.la
+%{__rm} $RPM_BUILD_ROOT%{_libdir}/gtk-2.0/2.*/engines/*.{a,la}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
