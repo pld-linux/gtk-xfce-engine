@@ -4,12 +4,12 @@
 Summary:	Xfce theme engine for GTK+
 Summary(pl.UTF-8):	Motyw Xfce dla GTK+
 Name:		gtk-xfce-engine
-Version:	2.8.0
+Version:	2.8.1
 Release:	1
 License:	GPL
 Group:		Themes/GTK+
 Source0:	http://archive.xfce.org/src/xfce/gtk-xfce-engine/2.8/%{name}-%{version}.tar.bz2
-# Source0-md5:	195f4dc2e6632143ca9ca6bd17ca4680
+# Source0-md5:	8a6527b61b0554cda11d06f66a567314
 URL:		http://www.xfce.org/
 BuildRequires:	autoconf >= 2.52
 BuildRequires:	automake >= 1:1.8
