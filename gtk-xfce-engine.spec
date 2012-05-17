@@ -51,7 +51,7 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT
 
 # no *.la for gtk engines
-%{__rm} $RPM_BUILD_ROOT%{_libdir}/gtk-*/*/engines/*.la
+%{__rm} $RPM_BUILD_ROOT%{_libdir}/gtk-*/*/*engines/*.la
 
 %clean
 rm -rf $RPM_BUILD_ROOT
