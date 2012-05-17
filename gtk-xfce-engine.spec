@@ -15,6 +15,7 @@ BuildRequires:	autoconf >= 2.52
 BuildRequires:	automake >= 1:1.8
 BuildRequires:	glib2-devel >= 1:2.18.0
 BuildRequires:	gtk+2-devel >= 2:2.14.0
+BuildRequires:	gtk+3-devel >= 3.2.0
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.9.0
 BuildRequires:	xfce4-dev-tools >= 4.10.0
@@ -47,7 +48,7 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT
 
 # no *.la for gtk engines
-%{__rm} $RPM_BUILD_ROOT%{_libdir}/gtk-2.0/2.*/engines/*.{a,la}
+%{__rm} $RPM_BUILD_ROOT%{_libdir}/gtk-2.0/2.*/engines/*.la
 
 %clean
 rm -rf $RPM_BUILD_ROOT
