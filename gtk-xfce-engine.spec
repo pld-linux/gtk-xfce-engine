@@ -1,4 +1,7 @@
 #
+# TODO:
+#	- split gtk+2 and gtk+3 engines
+#
 %define		xfce_version 4.10.0
 #
 Summary:	Xfce theme engine for GTK+
@@ -48,7 +51,7 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT
 
 # no *.la for gtk engines
-%{__rm} $RPM_BUILD_ROOT%{_libdir}/gtk-2.0/2.*/engines/*.la
+%{__rm} $RPM_BUILD_ROOT%{_libdir}/gtk-*/*/engines/*.la
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -57,4 +60,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README
 %attr(755,root,root) %{_libdir}/gtk-2.0/2.*/engines/*.so
+%attr(755,root,root) %{_libdir}/gtk-3.0/3.*/theming-engines/libxfce.so
 %{_datadir}/themes/Xfce*
