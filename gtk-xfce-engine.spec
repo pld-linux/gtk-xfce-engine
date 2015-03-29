@@ -1,25 +1,25 @@
 # TODO:
 #	- split gtk+2 and gtk+3 engines
 
-%define		xfce_version 4.10.0
+%define		xfce_version 4.12.0
 Summary:	Xfce theme engine for GTK+
 Summary(pl.UTF-8):	Motyw Xfce dla GTK+
 Name:		gtk-xfce-engine
-Version:	3.0.1
+Version:	3.2.0
 Release:	1
 License:	GPL
 Group:		Themes/GTK+
-Source0:	http://archive.xfce.org/src/xfce/gtk-xfce-engine/3.0/%{name}-%{version}.tar.bz2
-# Source0-md5:	174e774d0debb052ec457640275f065d
+Source0:	http://archive.xfce.org/src/xfce/gtk-xfce-engine/3.2/%{name}-%{version}.tar.bz2
+# Source0-md5:	363d6c16a48a00e26d45c45c2e1fd739
 URL:		http://www.xfce.org/
 BuildRequires:	autoconf >= 2.52
 BuildRequires:	automake >= 1:1.8
-BuildRequires:	glib2-devel >= 1:2.18.0
-BuildRequires:	gtk+2-devel >= 2:2.14.0
+BuildRequires:	glib2-devel >= 1:2.30.0
+BuildRequires:	gtk+2-devel >= 2:2.24.0
 BuildRequires:	gtk+3-devel >= 3.2.0
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.9.0
-BuildRequires:	xfce4-dev-tools >= 4.10.0
+BuildRequires:	xfce4-dev-tools >= 4.12.0
 Requires:	gtk+2 >= 2:2.14.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -32,15 +32,15 @@ Motyw Xfce dla GTK+.
 %prep
 %setup -q
 
-%{__sed} -i -e 's/AM_CONFIG_HEADER/AC_CONFIG_HEADERS/' configure.in
-
 %build
 %{__libtoolize}
 %{__aclocal}
 %{__autoconf}
 %{__automake}
 %configure \
-	--disable-silent-rules
+	--disable-silent-rules \
+	--enable-gtk2 \
+	--enable-gtk3
 
 %{__make}
 
